@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ProtocolOne.h"
+#import "ProtocolTwo.h"
+#import "CarSelling.h"
+#import "CarBay.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,50 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CarSelling *ff1 = [[CarSelling alloc]init];
+    CarSelling *ff2 = [[CarSelling alloc]init];
+    CarSelling *ff3 = [[CarSelling alloc]init];
+    
+    ff1.name = @"Петяff1";
+    ff1.secondName = @"Пупкинff1";
+    
+    ff2.name = @"ПЕтрff2";
+    ff2.secondName = @"Борискинff2";
+    
+    ff3.name = @"Володяff3";
+    ff3.secondName = @"Негуляйff3";
+    
+    CarBay *toyotaX = [[CarBay alloc]init];
+    CarBay *toyotalX = [[CarBay alloc]init];
+    CarBay *toyotaXl = [[CarBay alloc]init];
+    
+    toyotaX.name = @"ПетяtoyotaX";
+    toyotaX.secondName = @"ПупкинtoyotaX";
+    toyotaX.theNumberOfOwners = 2;
+    
+    toyotalX.name = @"ПЕтрtoyotalX";
+    toyotalX.secondName = @"БорискинtoyotalX";
+    
+    toyotaXl.name = @"ВолодяtoyotaXl";
+    toyotaXl.secondName = @"НегуляйtoyotaXl";
+    toyotaXl.theNumberOfOwners = 2;
+
+    NSArray *arrayCar = @[ff1, ff2, ff3, toyotaX, toyotalX, toyotaXl];
+    for (id <ProtocolOne, ProtocolTwo> obj in arrayCar) {
+        if ([obj conformsToProtocol:@protocol(ProtocolOne) ]) {
+            NSLog(@"Имя продовца %@", obj.name);
+            NSLog(@"Фамилая продовца %@", obj.secondName);
+            NSLog(@"ВИН номер %d", [obj vinNumber]);
+            [obj isPainted];
+            [obj isEquipman];
+            if ([obj respondsToSelector:@selector(condition)]) {
+                [obj condition];
+            }
+        }
+    }
+
+    
     return YES;
 }
 

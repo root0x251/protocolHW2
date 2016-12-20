@@ -15,6 +15,8 @@
 		F993A2391E091EC600730655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F993A2371E091EC600730655 /* LaunchScreen.storyboard */; };
 		F993A2441E091EC600730655 /* ProtocolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F993A2431E091EC600730655 /* ProtocolsTests.m */; };
 		F993A24F1E091EC600730655 /* ProtocolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F993A24E1E091EC600730655 /* ProtocolsUITests.m */; };
+		F993A2601E0922E900730655 /* CarSelling.m in Sources */ = {isa = PBXBuildFile; fileRef = F993A25F1E0922E900730655 /* CarSelling.m */; };
+		F993A2631E0922F400730655 /* CarBay.m in Sources */ = {isa = PBXBuildFile; fileRef = F993A2621E0922F400730655 /* CarBay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		F993A24A1E091EC600730655 /* ProtocolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F993A24E1E091EC600730655 /* ProtocolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolsUITests.m; sourceTree = "<group>"; };
 		F993A2501E091EC600730655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F993A25C1E091F1B00730655 /* ProtocolOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocolOne.h; path = ../ProtocolOne.h; sourceTree = "<group>"; };
+		F993A25D1E091F2F00730655 /* ProtocolTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocolTwo.h; path = ../ProtocolTwo.h; sourceTree = "<group>"; };
+		F993A25E1E0922E900730655 /* CarSelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSelling.h; sourceTree = "<group>"; };
+		F993A25F1E0922E900730655 /* CarSelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSelling.m; sourceTree = "<group>"; };
+		F993A2611E0922F400730655 /* CarBay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarBay.h; sourceTree = "<group>"; };
+		F993A2621E0922F400730655 /* CarBay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarBay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,14 @@
 		F993A2281E091EC600730655 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F993A25C1E091F1B00730655 /* ProtocolOne.h */,
+				F993A25D1E091F2F00730655 /* ProtocolTwo.h */,
 				F993A22C1E091EC600730655 /* AppDelegate.h */,
 				F993A22D1E091EC600730655 /* AppDelegate.m */,
+				F993A25E1E0922E900730655 /* CarSelling.h */,
+				F993A25F1E0922E900730655 /* CarSelling.m */,
+				F993A2611E0922F400730655 /* CarBay.h */,
+				F993A2621E0922F400730655 /* CarBay.m */,
 				F993A22F1E091EC600730655 /* ViewController.h */,
 				F993A2301E091EC600730655 /* ViewController.m */,
 				F993A2321E091EC600730655 /* Main.storyboard */,
@@ -274,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F993A2311E091EC600730655 /* ViewController.m in Sources */,
+				F993A2631E0922F400730655 /* CarBay.m in Sources */,
 				F993A22E1E091EC600730655 /* AppDelegate.m in Sources */,
 				F993A22B1E091EC600730655 /* main.m in Sources */,
+				F993A2601E0922E900730655 /* CarSelling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
